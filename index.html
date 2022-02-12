@@ -11,29 +11,28 @@
     <script>
       // make a number guessing game
 
-var randNum = Math.floor(Math.random() * 100) + 1;
-let guess = 0;
+      var randNum = Math.floor(Math.random() * 100) + 1;
+      let guess = 0;
 
-let flag = true;
-let guessNum = window.prompt("Enter a Number : ");
-while (flag) {
-  if (guessNum == randNum) {
-    flag = false;
-    continue;
-  } else if (guessNum > randNum) {
-    console.log("Guess a small number");
-    guessNum = window.prompt("Enter a small Number : ");
-  } else {
-    console.log("Guess a large number");
-    guessNum = window.prompt("Enter a large Number : ");
-  }
+      let flag = true;
+      let guessNum = window.prompt("Enter a Number : ");
+      while (flag) {
+        if (guessNum == randNum) {
+          flag = false;
+          continue;
+        } else if (guessNum > randNum) {
+          console.log("Guess a small number");
+          guessNum = window.prompt("Enter a small Number : ");
+        } else {
+          console.log("Guess a large number");
+          guessNum = window.prompt("Enter a large Number : ");
+        }
 
-  guess++;
-}
+        guess++;
+      }
 
-console.log(`you took ${guess} guess to reach correct number`);
-console.log(`Thanks for playing This Game`);
-
+      console.log(`you took ${guess} guess to reach correct number`);
+      console.log(`Thanks for playing This Game`);
     </script>
   </body>
 </html>
